@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{6bc8a758-8cde-4ba3-858b-ad31d352bd6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Render">
+      <UniqueIdentifier>{34faa507-a355-4b0d-9fd4-8048853604ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Render\DX11">
+      <UniqueIdentifier>{751617a2-174c-45e8-a61e-2b7f6c1173ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Helpers">
+      <UniqueIdentifier>{a433e917-2099-48fa-a062-1cbd412169d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Scene">
+      <UniqueIdentifier>{c784ddfe-f848-445a-9241-b9836c078faa}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\main.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Render\Render.cpp">
+      <Filter>Source\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Render\DX11\DeviceDX11.cpp">
+      <Filter>Source\Render\DX11</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Render\DX11\GeometryBufferDX11.cpp">
+      <Filter>Source\Render\DX11</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Render\Program.cpp">
+      <Filter>Source\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Render\DX11\ShaderDX11.cpp">
+      <Filter>Source\Render\DX11</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Helpers\Timer.cpp">
+      <Filter>Source\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Render\DX11\TextureDX11.cpp">
+      <Filter>Source\Render\DX11</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Scene\correction.cpp">
+      <Filter>Source\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Scene\model.cpp">
+      <Filter>Source\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Scene\plane.cpp">
+      <Filter>Source\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Scene\programs.cpp">
+      <Filter>Source\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Scene\quad.cpp">
+      <Filter>Source\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Scene\scene.cpp">
+      <Filter>Source\Scene</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Render\Render.h">
+      <Filter>Source\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Render\Device.h">
+      <Filter>Source\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Render\DX11\DeviceDX11.h">
+      <Filter>Source\Render\DX11</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Helpers\Color.h">
+      <Filter>Source\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Helpers\Matrix.h">
+      <Filter>Source\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Helpers\Vector.h">
+      <Filter>Source\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Helpers\Vector2.h">
+      <Filter>Source\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Helpers\Vector4.h">
+      <Filter>Source\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Helpers\Helpers.h">
+      <Filter>Source\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Render\DX11\GeometryBufferDX11.h">
+      <Filter>Source\Render\DX11</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Render\GeometryBuffer.h">
+      <Filter>Source\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Render\Program.h">
+      <Filter>Source\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Render\Shader.h">
+      <Filter>Source\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Render\DX11\ShaderDX11.h">
+      <Filter>Source\Render\DX11</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Helpers\Buffer.h">
+      <Filter>Source\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Helpers\Timer.h">
+      <Filter>Source\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Render\Texture.h">
+      <Filter>Source\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Render\DX11\TextureDX11.h">
+      <Filter>Source\Render\DX11</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Helpers\Delegate.h">
+      <Filter>Source\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Scene\correction.h">
+      <Filter>Source\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Scene\model.h">
+      <Filter>Source\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Scene\plane.h">
+      <Filter>Source\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Scene\programs.h">
+      <Filter>Source\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Scene\quad.h">
+      <Filter>Source\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Scene\scene.h">
+      <Filter>Source\Scene</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

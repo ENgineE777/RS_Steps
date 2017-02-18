@@ -1,0 +1,36 @@
+﻿  scene.cpp
+d:\work\lectures\render system\step 5 - program\scene\scene.h(2): fatal error C1083: Cannot open include file: 'Helpers/Timer.h': No such file or directory
+  quad.cpp
+d:\work\lectures\render system\step 5 - program\scene\quad.h(2): fatal error C1083: Cannot open include file: 'Helpers/Timer.h': No such file or directory
+  programs.cpp
+d:\work\lectures\render system\step 5 - program\scene\programs.h(3): fatal error C1083: Cannot open include file: 'Helpers/Timer.h': No such file or directory
+  Render.cpp
+d:\work\lectures\render system\step 5 - program\render\render.h(4): fatal error C1083: Cannot open include file: 'Render/Device.h': No such file or directory
+  Program.cpp
+d:\work\lectures\render system\step 5 - program\render\render.h(4): fatal error C1083: Cannot open include file: 'Render/Device.h': No such file or directory
+  ShaderDX11.cpp
+d:\work\lectures\render system\step 5 - program\render\dx11\shaderdx11.h(4): fatal error C1083: Cannot open include file: 'Render/Shader.h': No such file or directory
+  GeometryBufferDX11.cpp
+d:\work\lectures\render system\step 5 - program\render\dx11\geometrybufferdx11.h(4): fatal error C1083: Cannot open include file: 'Render/GeometryBuffer.h': No such file or directory
+  DeviceDX11.cpp
+d:\work\lectures\render system\step 5 - program\render\dx11\devicedx11.h(4): fatal error C1083: Cannot open include file: 'Render/Device.h': No such file or directory
+  main.cpp
+d:\work\lectures\render system\step 5 - program\helpers\vector2.h(130): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+d:\work\lectures\render system\step 5 - program\helpers\vector2.h(301): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+d:\work\lectures\render system\step 5 - program\helpers\matrix.h(416): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+d:\work\lectures\render system\step 5 - program\helpers\buffer.h(20): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+d:\work\lectures\render system\step 5 - program\helpers\buffer.h(57): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+d:\work\lectures\render system\step 5 - program\main.cpp(16): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\work\lectures\render system\step 5 - program\main.cpp(62): error C2440: '=': cannot convert from 'const char [13]' to 'LPCWSTR'
+  d:\work\lectures\render system\step 5 - program\main.cpp(62): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+d:\work\lectures\render system\step 5 - program\main.cpp(68): error C2664: 'int MessageBoxW(HWND,LPCWSTR,LPCWSTR,UINT)': cannot convert argument 2 from 'const char [28]' to 'LPCWSTR'
+  d:\work\lectures\render system\step 5 - program\main.cpp(68): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+d:\work\lectures\render system\step 5 - program\main.cpp(78): error C2664: 'HWND CreateWindowExW(DWORD,LPCWSTR,LPCWSTR,DWORD,int,int,int,int,HWND,HMENU,HINSTANCE,LPVOID)': cannot convert argument 2 from 'const char [13]' to 'LPCWSTR'
+  d:\work\lectures\render system\step 5 - program\main.cpp(78): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+d:\work\lectures\render system\step 5 - program\main.cpp(83): error C2664: 'int MessageBoxW(HWND,LPCWSTR,LPCWSTR,UINT)': cannot convert argument 2 from 'const char [24]' to 'LPCWSTR'
+  d:\work\lectures\render system\step 5 - program\main.cpp(83): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+d:\work\lectures\render system\step 5 - program\main.cpp(92): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+d:\work\lectures\render system\step 5 - program\main.cpp(113): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  Timer.cpp
+  Generating Code...
