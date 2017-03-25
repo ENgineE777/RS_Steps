@@ -11,13 +11,10 @@ class TextureDX11 : public Texture
 public:
 	class ID3D11Texture2D* texture;
 	class ID3D11ShaderResourceView* srview;
-
-	class ID3D11RenderTargetView* rt;
-	class ID3D11DepthStencilView* depth;
 	
 	static int GetFormat(Format fmt);
 
-	TextureDX11(int w, int h, Format f, int l, bool rt, Type tp);
+	TextureDX11(int w, int h, Format f, int l, Type tp);
 
 	virtual void SetFilters(FilterType magmin, FilterType mipmap);
 	virtual void SetAdress(TextureAddress adress);

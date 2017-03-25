@@ -22,10 +22,6 @@ class DeviceDX11 : public Device
 	struct D3D11_DEPTH_STENCIL_DESC* ds_desc;
 	class ID3D11DepthStencilState*   ds_state;
 
-	int  scr_w;
-	int  scr_h;
-	bool vp_was_setted;
-
 	HWND hwnd;
 
 	DeviceDX11();

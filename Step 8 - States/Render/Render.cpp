@@ -91,7 +91,7 @@ Texture* Render::LoadTexture(const char* name)
 
 	int colorMode = bitCount / 8;
 
-	Texture* texture = device->CreateTexture(imageWidth, imageHeight, Texture::FMT_A8R8G8B8, 0, false, Texture::Tex2D);
+	Texture* texture = device->CreateTexture(imageWidth, imageHeight, Texture::FMT_A8R8G8B8, 0, Texture::Tex2D);
 
 	int pitch;
 	int pitchSlice;

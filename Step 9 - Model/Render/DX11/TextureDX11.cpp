@@ -17,7 +17,7 @@ int TextureDX11::GetFormat(Format fmt)
 	return 0;
 }
 
-TextureDX11::TextureDX11(int w, int h, Format f, int l, bool is_rt, Type tp) : Texture(w, h, f, l, tp)
+TextureDX11::TextureDX11(int w, int h, Format f, int l, Type tp) : Texture(w, h, f, l, tp)
 {
 	texture = NULL;
 
@@ -75,9 +75,6 @@ TextureDX11::TextureDX11(int w, int h, Format f, int l, bool is_rt, Type tp) : T
 	sampler_need_recrete = true;
 
 	DeviceDX11::instance->pd3dDevice->CreateShaderResourceView( texture, &srvDesc, &srview );
-
-	rt = NULL;
-	depth = NULL;
 }
 
 void TextureDX11::SetFilters(FilterType magmin, FilterType mipmap)

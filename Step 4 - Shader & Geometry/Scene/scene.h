@@ -8,8 +8,6 @@ class Scene : public Object
 {
 public:
 
-	Shader* vshader;
-	Shader* pshader;
 	Quad  quad;
 
 	void Init();

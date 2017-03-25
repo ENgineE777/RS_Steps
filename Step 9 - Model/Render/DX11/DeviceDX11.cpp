@@ -75,8 +75,6 @@ DeviceDX11::DeviceDX11()
 	raster_desc->MultisampleEnable = false;
 	raster_desc->ScissorEnable = false;
 	raster_desc->SlopeScaledDepthBias = 0.0f;
-
-	vp_was_setted = false;
 }
 
 bool DeviceDX11::Init(int width, int height, void* data)
@@ -129,9 +127,6 @@ bool DeviceDX11::Init(int width, int height, void* data)
 
 void DeviceDX11::RecreateSwapchain(int wgt, int hgt)
 {
-	scr_w = wgt;
-	scr_h = hgt;
-	
 	RELEASE(depthStencilView)
 	RELEASE(depthStencil)
 	RELEASE(renderTargetView)
@@ -256,9 +251,9 @@ Shader* DeviceDX11::CreateShader(Shader::Type type, const char* name)
 	return new ShaderDX11(type, name);
 }
 
-Texture* DeviceDX11::CreateTexture(int w, int h, Texture::Format f, int l, bool rt, Texture::Type tp)
+Texture* DeviceDX11::CreateTexture(int w, int h, Texture::Format f, int l, Texture::Type tp)
 {
-	return new TextureDX11(w, h, f, l, rt, tp);
+	return new TextureDX11(w, h, f, l, tp);
 }
 
 int DeviceDX11::GetPrimitiveType(Primitive type)

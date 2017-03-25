@@ -17,14 +17,6 @@ class Device
 
 public:
 
-	struct Rect
-	{
-		short left;
-		short right;
-		short top;
-		short bottom;
-	};
-
 	enum Primitive
 	{
 		LineStrip = 0,
@@ -81,7 +73,7 @@ public:
 	virtual GeometryBuffer* CreateBuffer(int size, int stride) = 0;
 	virtual void SetVertexBuffer(int slot, GeometryBuffer* buffer) = 0;
 	
-	virtual Texture* CreateTexture(int w, int h, Texture::Format f, int l, bool rt, Texture::Type tp) = 0;
+	virtual Texture* CreateTexture(int w, int h, Texture::Format f, int l, Texture::Type tp) = 0;
 
 	virtual void Draw(Primitive prim, int startVertex, int primCount)
 	{

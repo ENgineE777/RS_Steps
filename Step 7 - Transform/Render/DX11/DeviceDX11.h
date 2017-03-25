@@ -22,10 +22,6 @@ class DeviceDX11 : public Device
 	struct D3D11_DEPTH_STENCIL_DESC* ds_desc;
 	class ID3D11DepthStencilState*   ds_state;
 
-	int  scr_w;
-	int  scr_h;
-	bool vp_was_setted;
-
 	HWND hwnd;
 
 	DeviceDX11();
@@ -45,7 +41,7 @@ public:
 	virtual GeometryBuffer* CreateBuffer(int size, int stride);
 	virtual void SetVertexBuffer(int slot, GeometryBuffer* buffer);
 
-	virtual Texture* CreateTexture(int w, int h, Texture::Format f, int l, bool rt, Texture::Type tp);
+	virtual Texture* CreateTexture(int w, int h, Texture::Format f, int l, Texture::Type tp);
 
 	int GetPrimitiveType(Primitive type);
 	int CalcPrimCount(Primitive type, int primCount);

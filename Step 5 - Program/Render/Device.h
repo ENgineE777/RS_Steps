@@ -16,14 +16,6 @@ class Device
 
 public:
 
-	struct Rect
-	{
-		short left;
-		short right;
-		short top;
-		short bottom;
-	};
-
 	enum Primitive
 	{
 		LineStrip = 0,

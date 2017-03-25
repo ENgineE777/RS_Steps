@@ -256,9 +256,9 @@ Shader* DeviceDX11::CreateShader(Shader::Type type, const char* name)
 	return new ShaderDX11(type, name);
 }
 
-Texture* DeviceDX11::CreateTexture(int w, int h, Texture::Format f, int l, bool rt, Texture::Type tp)
+Texture* DeviceDX11::CreateTexture(int w, int h, Texture::Format f, int l, Texture::Type tp)
 {
-	return new TextureDX11(w, h, f, l, rt, tp);
+	return new TextureDX11(w, h, f, l, tp);
 }
 
 int DeviceDX11::GetPrimitiveType(Primitive type)

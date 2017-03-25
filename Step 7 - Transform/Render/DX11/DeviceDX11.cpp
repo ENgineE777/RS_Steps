@@ -41,8 +41,6 @@ DeviceDX11::DeviceDX11()
 	ds_desc->BackFace.StencilDepthFailOp = D3D11_STENCIL_OP_DECR;
 	ds_desc->BackFace.StencilPassOp = D3D11_STENCIL_OP_KEEP;
 	ds_desc->BackFace.StencilFunc = D3D11_COMPARISON_ALWAYS;
-
-	vp_was_setted = false;
 }
 
 bool DeviceDX11::Init(int width, int height, void* data)
@@ -94,10 +92,7 @@ bool DeviceDX11::Init(int width, int height, void* data)
 }
 
 void DeviceDX11::RecreateSwapchain(int wgt, int hgt)
-{
-	scr_w = wgt;
-	scr_h = hgt;
-	
+{	
 	RELEASE(depthStencilView)
 	RELEASE(depthStencil)
 	RELEASE(renderTargetView)
@@ -226,9 +221,9 @@ Shader* DeviceDX11::CreateShader(Shader::Type type, const char* name)
 	return new ShaderDX11(type, name);
 }
 
-Texture* DeviceDX11::CreateTexture(int w, int h, Texture::Format f, int l, bool rt, Texture::Type tp)
+Texture* DeviceDX11::CreateTexture(int w, int h, Texture::Format f, int l, Texture::Type tp)
 {
-	return new TextureDX11(w, h, f, l, rt, tp);
+	return new TextureDX11(w, h, f, l, tp);
 }
 
 int DeviceDX11::GetPrimitiveType(Primitive type)

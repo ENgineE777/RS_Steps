@@ -43,8 +43,6 @@ public:
 	Vector bb_max;
 	Vector bb_min;
 
-	Matrix world;
-
 	std::vector<Texture*> textures;
 	std::vector<Mesh> meshes;
 

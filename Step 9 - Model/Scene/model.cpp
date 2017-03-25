@@ -33,7 +33,6 @@ void Model::Drawer::Render()
 
 	Programs::prg->Apply();
 
-	Programs::prg->VS_SetMatrix("world", &world, 1);
 	Programs::prg->VS_SetMatrix("trans", &trans, 1);
 	Programs::prg->PS_SetVector("color", &color, 1);
 
@@ -230,7 +229,7 @@ void Model::LoadModelMS3D(const char* filename)
 		fread(materials[i].name, sizeof(char), 32, file);
 		fread(&materials[i].ambient, sizeof(float), 4, file);
 		fread(&materials[i].diffuse, sizeof(float), 4, file);
-	    fread(&materials[i].specular, sizeof(float), 4, file);
+		fread(&materials[i].specular, sizeof(float), 4, file);
 		fread(&materials[i].emissive, sizeof(float), 4, file);
 		fread(&materials[i].shininess, sizeof(float), 1, file);
 		fread(&materials[i].transparency, sizeof(float), 1, file);

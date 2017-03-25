@@ -8,20 +8,11 @@
 class Device
 {
 	friend class Render;
-	friend class Program;
 
 	virtual bool Init(int width, int height, void* data) = 0;
 	virtual void Release() = 0;
 
 public:
-
-	struct Rect
-	{
-		short left;
-		short right;
-		short top;
-		short bottom;
-	};
 
 	enum Primitive
 	{
